@@ -4,7 +4,7 @@ body{
 .my-container{
     display: flex;
     flex-wrap: nowrap;
-    min-width: 1200px;
+    min-width: 1260px;
     height: calc(100vh - 20px);
 }
 .record-medical{
@@ -34,6 +34,11 @@ img{
 }
 .record-medical__body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 300px;
+    background: url('./logo_transparent.jpeg');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: top center;
 }
 hr.record-medical__divisor{
     border:1px dashed navy;
