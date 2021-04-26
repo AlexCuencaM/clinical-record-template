@@ -1,0 +1,52 @@
+body{
+    box-sizing: border-box;
+}
+.my-container{
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 1200px;
+    height: calc(100vh - 20px);
+}
+.record-medical{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+img{
+    max-width: 100%;
+}
+
+.record-medical__image{
+    width: 150px;
+    height: 100px;
+}
+.record-medical__info, hr, .record-medical__footer{
+    font-style: italic;
+    font-weight:bold;
+    color: navy;
+}
+.record-medical__header{
+    display: flex;
+    align-items: center;
+}
+.text-centered{
+    text-align: center;
+}
+.record-medical__body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+hr.record-medical__divisor{
+    border:1px dashed navy;
+}
+
+.record-medical__footer{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    
+}
+
+.record-medical__data{
+    height: 90px;
+}
