@@ -1,4 +1,7 @@
-body{
+
+body, html{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 .my-container{
@@ -8,9 +11,8 @@ body{
     height: calc(100vh - 20px);
 }
 .record-medical{
+    flex: 0 1 calc(50% - .5px);
     padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
 }
 img{
     max-width: 100%;
@@ -32,6 +34,9 @@ img{
 .text-centered{
     text-align: center;
 }
+.record-medical__data{
+    height: 90px;
+}
 .record-medical__body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     height: 300px;
@@ -40,11 +45,17 @@ img{
     background-size: 90%;
     background-position: top center;
 }
+.record-medical__list{
+    display: flex;
+    flex-direction: column;
+}
+
 hr.record-medical__divisor{
     border:1px dashed navy;
 }
 
 .record-medical__footer{
+    font-size: .9rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     width: 100%;
@@ -52,6 +63,3 @@ hr.record-medical__divisor{
     
 }
 
-.record-medical__data{
-    height: 90px;
-}
