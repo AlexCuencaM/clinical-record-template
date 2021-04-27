@@ -8,11 +8,14 @@ body, html{
     display: flex;
     flex-wrap: nowrap;
     min-width: 1260px;
+    
     height: calc(100vh - 20px);
 }
 .record-medical{
     flex: 0 1 calc(50% - .5px);
     padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
 }
 img{
     max-width: 100%;
@@ -27,19 +30,21 @@ img{
     font-weight:bold;
     color: navy;
 }
+
+.text-centered{
+    text-align: center;
+}
+
 .record-medical__header{
     display: flex;
     align-items: center;
-}
-.text-centered{
-    text-align: center;
 }
 .record-medical__data{
     height: 90px;
 }
 .record-medical__body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    height: 300px;
+    flex: 1 0 60%;
     background: url('./logo_transparent.jpeg');
     background-repeat: no-repeat;
     background-size: 90%;
@@ -48,10 +53,7 @@ img{
 .record-medical__list{
     display: flex;
     flex-direction: column;
-}
-
-hr.record-medical__divisor{
-    border:1px dashed navy;
+    margin: 0;
 }
 
 .record-medical__footer{
@@ -62,4 +64,11 @@ hr.record-medical__divisor{
     margin-top: auto;
     
 }
+
+hr.record-medical__divisor{
+    min-height: 100vh;
+    border:1px dashed navy;
+}
+
+
 
